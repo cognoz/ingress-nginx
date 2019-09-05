@@ -21,7 +21,7 @@ Validating webhook must be served using TLS, you need to generate a certificate.
     To run the validating webhook with a service named `ingress-validation-webhook` in the namespace `ingress-nginx`, run
 
     ```bash
-    openssl req -x509 -newkey rsa:2048 -keyout certificate.pem -out key.pem -days 365 -nodes -subj "/CN=ingress-validation-webhook.ingress-nginx.svc"
+    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out certificate.pem -days 365 -nodes -subj "/CN=ingress-validation-webhook.ingress-nginx.svc"
     ```
 
 ##### Using Kubernetes CA
